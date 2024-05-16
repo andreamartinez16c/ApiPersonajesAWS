@@ -22,8 +22,7 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-builder.Services.AddCors(p => p.AddPolicy("corsenabled", options =>
-{
+builder.Services.AddCors(p => p.AddPolicy("corsenabled", options =>{
     options.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
 }));
 
